@@ -4,4 +4,4 @@
 `$ npm install`
 
 ## Start server
-`$ ng serve`
+`$ npm start`

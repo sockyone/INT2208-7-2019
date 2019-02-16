@@ -9,4 +9,7 @@ https://www.mongodb.com/download-center/community
 `$ npm install`
 
 ## Start server
-`$ npm start`
+```
+$ sudo service mongod start
+$ npm start
+```
