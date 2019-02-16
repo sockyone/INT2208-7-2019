@@ -1,26 +1,26 @@
-
-require('dotenv').config();
+﻿require('rootpath')();
 const express = require('express');
-const bodyParser = require('body-parser');
-const http = require('http');
-const passport = require('passport');
-const FacebookStrategy = require('passport-facebook');
 const app = express();
-const api = require('./api/api.js');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const jwt = require('_helpers/jwt');
+const errorHandler = require('_helpers/error-handler');
 
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
-app.use('/api',api);
+app.use(cors());
 
+// use JWT auth to secure the api
+app.use(jwt());
 
-const port = process.env.PORT || 3000;
+// api routes
+app.use('/users', require('./users/users.controller'));
 
-app.set('port',port);
+// global error handler
+app.use(errorHandler);
 
-app.get('/test',(req,res)=> {
-    res.json({message: "test successful"});
+// start server
+const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
+const server = app.listen(port, function () {
+    console.log('Server listening on port ' + port);
 });
-
-const server = http.createServer(app);
-
-server.listen(port,()=> console.log(`API running on localhost:${port}`));
