@@ -1,10 +1,7 @@
 # INT2208-7-2019
 ## Nhóm-1
 
-<h1 style="">Response App</h1>
-<h3>Một thứ luôn "phản hồi" và "tương tác" với bạn"...</h3>
-
-<p>Response App là một mạng xã hội dạng nhỏ (group) phục vụ cho một mục đích nhỏ, với những tính năng cơ bản, giao diện đơn giản dễ nhìn.</p>
+<h1 style="">Response App</h1>vụ cho một mục đích nhỏ, với những tính năng cơ bản, giao diện đơn giản dễ nhìn.</p>
 
 <h4>Mục tiêu: </h4>
 <p>Những người dùng mạng xã hội có hội nhóm nhỏ và những mục đích nhỏ, không nhiều "group" loạn như facebook (ví dụ như: http://confluence.i2g.cloud)</p>
@@ -26,12 +23,12 @@
 </ol>
 
 
-<h3>Change log</h3>
+<h3>Changelog</h3>
 
 
-<h4>(11/2/2019) Demo:</h4>
+<h4>(1/2/2019)Demo:</h4>
 
-<p>Đăng ký, đăng nhập:</p>
+<p>Đăng ký, đng nhập:</p>
 
 ![Screenshot](image2.png)
 <p>Xem news feed</p>
@@ -52,13 +49,17 @@
 </ul>
 <h5>Product backlog:</h5>
 <ol>
-    <li>hệ thống lưu trữ thông tin user, trang đăng kí đăng nhập và nav bar điều hướng</li>
-    <li>trang user profile và kết bạn</li>
-    <li>trang news feed và tính năng tìm kiếm</li>
-    <li>trang chat messenger giữa bạn bè</li>
-    <li>còn cập nhật sau...</li>
+    <li>Hệ thống lưu trữ thông tin user, trang đăng kí đăng nhập và nav bar điều hướng</li>
+    <li>hrang user profile và kết bạn</li>
+    <li>3rang news feed và tính năng tìm kiếm</li>
+    <li>>rang chat messenger giữa bạn bè</li>
+    <li>Mòn cập nhật sau...</li>
 </ol>
 
+ộ<p>Response App là một mạng xã hội dạng nhỏ (group) phục vụ cho một mục đích nhỏ, với những tính năng cơ bản, giao diện đơn giản dễ nhìn.</p>
+
+
+//nháp
 </h4>Text</h4>:
 1. 10h tối
 2. User model: 
@@ -70,6 +71,8 @@
        gen:
        imageUrl: 
    }
-3. token: JWT, passport
+3. token: JWT, pat thứ luôn "phản hồi" và "tương tác" với bạn"...</h3>
 
-<p>Simple app, just response.</p>
+ssport
+
+
