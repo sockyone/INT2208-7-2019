@@ -9,9 +9,9 @@
 <h4>Tính năng:</h4>
 <ol>
     <li>Đăng ký, đăng nhập, authentication với JWT</li>
-    <li>news feed xem toàn bộ các bài đăng </li>
-    <li>chat messenger</li>
-    <li>trang xem user profile và chỉnh sửa</li>
+    <li>News feed xem toàn bộ các bài đăng </li>
+    <li>Chat messenger</li>
+    <li>Trang xem user profile và chỉnh sửa</li>
 </ol>
 
 <h4>Thành viên:</h4>
@@ -50,13 +50,13 @@
 <h5>Product backlog:</h5>
 <ol>
     <li>Hệ thống lưu trữ thông tin user, trang đăng kí đăng nhập và nav bar điều hướng</li>
-    <li>hrang user profile và kết bạn</li>
-    <li>3rang news feed và tính năng tìm kiếm</li>
-    <li>>rang chat messenger giữa bạn bè</li>
-    <li>Mòn cập nhật sau...</li>
+    <li>Trang user profile và kết bạn</li>
+    <li>Trang news feed và tính năng tìm kiếm</li>
+    <li>Trang chat messenger giữa bạn bè</li>
+    <li>Còn cập nhật sau...</li>
 </ol>
 
-ộ<p>Response App là một mạng xã hội dạng nhỏ (group) phục vụ cho một mục đích nhỏ, với những tính năng cơ bản, giao diện đơn giản dễ nhìn.</p>
+<p>Response App là một mạng xã hội dạng nhỏ (group) phục vụ cho một mục đích nhỏ, với những tính năng cơ bản, giao diện đơn giản dễ nhìn.</p>
 
 
 //nháp
@@ -73,6 +73,5 @@
    }
 3. token: JWT, pat thứ luôn "phản hồi" và "tương tác" với bạn"...</h3>
 
-ssport
 
 
