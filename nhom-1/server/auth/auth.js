@@ -11,9 +11,11 @@ const passport = require('passport');
 const FacebookStrategy = require('passport-facebook');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 
 const url = process.env.URL_MONGODB;
+const secret = process.env.TOKEN_SECRET;
 
 mongoose.connect(process.env.URL_MONGODB,{useNewUrlParser:true});
 
@@ -134,6 +136,51 @@ router.post('/createuser',(req,res)=>{
         }
     });
 });
+
+
+/**
+ * gửi login đến cho API này, là một object với 2 biến
+ * là username và password, password này lưu ý là chưa hash chưa làm gì cả
+ */
+router.post('/login',(req,res)=>{
+    User.findOne({username:req.body.username},(err,docs)=>{
+        if (err) {
+            //nếu kết nối với server bị lỗi, trả về state false
+            res.json({
+                state:false,
+                token:false
+            });
+        } else {
+            if (docs) {
+                //nếu tìm được user này
+                if (bcrypt.compareSync(req.body.password,docs.password)) {
+                    //đúng password, trả về token
+                    res.json({
+                        state:true,
+                        token: jwt.sign({
+                            username: docs.username
+                        },
+                        secret, {expiresIn:'7 days'}
+                        )
+                    });
+                } else {
+                    //sai password, trả về token là false
+                    res.json({
+                        state:true,
+                        token: false
+                    });
+                }
+            } else {
+                //không tìm thấy user, trả về token false
+                res.json({
+                    state:true,
+                    token: false
+                });
+            }
+        }
+    });
+});
+
 
 
 
