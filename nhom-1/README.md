@@ -71,7 +71,7 @@
        gen:
        imageUrl: 
    }
-3. token: JWT, pat thứ luôn "phản hồi" và "tương tác" với bạn"...</h3>
+3. token: JWT</h3>
 
 
 
